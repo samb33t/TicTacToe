@@ -36,6 +36,24 @@ checkRows[l_List] :=
 	]
 
 
+(* ::Subsection:: *)
+(*Check Columns*)
+
+
+checkColumns[l_List] := 
+	Module[
+		{columnList},
+		columnList = Flatten[Transpose[Partition[l, 3]]];
+		If[
+			SameQ[Sequence @@ columnList[[1;;3]]]||
+			SameQ[Sequence @@ columnList[[4;;6]]]||
+			SameQ[Sequence @@ columnList[[7;;9]]],
+			True,
+			False
+		]
+	]
+
+
 (* ::Section:: *)
 (*Package footer*)
 
