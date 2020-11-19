@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6244,        184]
-NotebookOptionsPosition[      4797,        150]
-NotebookOutlinePosition[      5191,        166]
-CellTagsIndexPosition[      5148,        163]
+NotebookDataLength[     10835,        292]
+NotebookOptionsPosition[      9164,        254]
+NotebookOutlinePosition[      9559,        270]
+CellTagsIndexPosition[      9516,        267]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -28,7 +28,7 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"<<", "TicTacToe`"}]], "Input",
  CellChangeTimes->{{3.8147895927696753`*^9, 3.814789596904213*^9}},
- CellLabel->"In[18]:=",ExpressionUUID->"25688e6c-4aad-4d18-9f56-aae29708e422"],
+ CellLabel->"In[2]:=",ExpressionUUID->"25688e6c-4aad-4d18-9f56-aae29708e422"],
 
 Cell[CellGroupData[{
 
@@ -144,12 +144,116 @@ Cell[BoxData[
  CellChangeTimes->{3.814790540091037*^9, 3.814790597608161*^9, 
   3.8147906343923683`*^9},
  CellLabel->"Out[19]=",ExpressionUUID->"7c19dd27-8c6e-4af8-b14a-d6fcb591efa1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"startGame", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.814791495785568*^9, 3.814791499072328*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"83e9ac5f-53f5-4e90-9dd1-5386694a1923"],
+
+Cell[BoxData[
+ DynamicModuleBox[{TicTacToe`label$$ = {
+  "X", "X", "O", "O", "O", "X", "X", "X", "O"}, TicTacToe`chance$$ = 10}, 
+  TagBox[GridBox[{
+     {
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 1], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 1] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 1] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 1] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 2], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 2] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 2] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 2] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 3], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 3] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 3] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 3] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}]},
+     {
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 4], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 4] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 4] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 4] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 5], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 5] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 5] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 5] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 6], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 6] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 6] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 6] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}]},
+     {
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 7], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 7] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 7] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 7] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 8], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 8] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 8] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 8] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}], 
+      DynamicBox[ToBoxes[
+        Button[
+         Part[TicTacToe`label$$, 9], 
+         If[
+          OddQ[TicTacToe`chance$$], Part[TicTacToe`label$$, 9] = "X"; 
+          Increment[TicTacToe`chance$$], Part[TicTacToe`label$$, 9] = "O"; 
+          Increment[TicTacToe`chance$$]], Enabled -> 
+         Dynamic[Part[TicTacToe`label$$, 9] == Null]], StandardForm],
+       ImageSizeCache->{70., {9.3, 16.7}}]}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.814791499662261*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"96318bf9-a1f6-4547-bb31-a2559992313c"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{808, 655},
-WindowMargins->{{Automatic, 79}, {Automatic, 18}},
+WindowMargins->{{Automatic, 227}, {11, Automatic}},
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"965ac014-5ee4-4621-a3a1-be5f70bc44eb"
@@ -166,23 +270,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 269, 5, 30, "Input",ExpressionUUID->"0db55f69-f29f-4fc1-b27e-3d12d8b5817f"],
-Cell[830, 27, 201, 3, 30, "Input",ExpressionUUID->"25688e6c-4aad-4d18-9f56-aae29708e422"],
+Cell[830, 27, 200, 3, 30, "Input",ExpressionUUID->"25688e6c-4aad-4d18-9f56-aae29708e422"],
 Cell[CellGroupData[{
-Cell[1056, 34, 152, 3, 67, "Section",ExpressionUUID->"1220ef45-7a23-43b5-8a78-93749a7dc68e"],
+Cell[1055, 34, 152, 3, 67, "Section",ExpressionUUID->"1220ef45-7a23-43b5-8a78-93749a7dc68e"],
 Cell[CellGroupData[{
-Cell[1233, 41, 166, 3, 54, "Subsection",ExpressionUUID->"b1c17b58-dad8-4385-bd19-e6037f16094c"],
-Cell[1402, 46, 943, 26, 94, "Input",ExpressionUUID->"fa86a0ff-69b1-490d-8e04-b63ba6c592a8"],
+Cell[1232, 41, 166, 3, 54, "Subsection",ExpressionUUID->"b1c17b58-dad8-4385-bd19-e6037f16094c"],
+Cell[1401, 46, 943, 26, 94, "Input",ExpressionUUID->"fa86a0ff-69b1-490d-8e04-b63ba6c592a8"],
 Cell[CellGroupData[{
-Cell[2370, 76, 320, 7, 30, "Input",ExpressionUUID->"1e73ebc6-5b57-4457-b6d1-b51fe5609a22"],
-Cell[2693, 85, 276, 5, 34, "Output",ExpressionUUID->"93d56505-9408-4ea0-bc95-3f20c0ac49fe"]
+Cell[2369, 76, 320, 7, 30, "Input",ExpressionUUID->"1e73ebc6-5b57-4457-b6d1-b51fe5609a22"],
+Cell[2692, 85, 276, 5, 34, "Output",ExpressionUUID->"93d56505-9408-4ea0-bc95-3f20c0ac49fe"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3018, 96, 165, 3, 54, "Subsection",ExpressionUUID->"9c71bdad-7120-4fea-bfd4-782fda349673"],
-Cell[3186, 101, 941, 26, 94, "Input",ExpressionUUID->"f2cd4d34-7ee6-4233-b093-9eae663668e0"],
+Cell[3017, 96, 165, 3, 54, "Subsection",ExpressionUUID->"9c71bdad-7120-4fea-bfd4-782fda349673"],
+Cell[3185, 101, 941, 26, 94, "Input",ExpressionUUID->"f2cd4d34-7ee6-4233-b093-9eae663668e0"],
 Cell[CellGroupData[{
-Cell[4152, 131, 326, 7, 30, "Input",ExpressionUUID->"ff5d2612-c60d-4311-8e81-287315d25e93"],
-Cell[4481, 140, 276, 5, 34, "Output",ExpressionUUID->"7c19dd27-8c6e-4af8-b14a-d6fcb591efa1"]
+Cell[4151, 131, 326, 7, 30, "Input",ExpressionUUID->"ff5d2612-c60d-4311-8e81-287315d25e93"],
+Cell[4480, 140, 276, 5, 34, "Output",ExpressionUUID->"7c19dd27-8c6e-4af8-b14a-d6fcb591efa1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4793, 150, 201, 3, 30, "Input",ExpressionUUID->"83e9ac5f-53f5-4e90-9dd1-5386694a1923"],
+Cell[4997, 155, 4127, 94, 134, "Output",ExpressionUUID->"96318bf9-a1f6-4547-bb31-a2559992313c"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

@@ -23,6 +23,33 @@ BeginPackage["TicTacToe`"]
 
 
 (* ::Subsection:: *)
+(*Main game board*)
+
+
+startGame[] := DynamicModule[
+	{label, chance},
+	label = Table[Null, 9];
+	chance = 1;
+	Grid[
+		Partition[
+			Dynamic[
+				Button[label[[#]],
+					If[
+						OddQ[chance],
+						label[[#]]="X";
+						chance++,
+						label[[#]]="O";
+						chance++
+					], 
+					Enabled -> Dynamic[label[[#]] == Null]
+				]
+			]& /@ Range[9],
+		3]
+	]
+]
+
+
+(* ::Subsection:: *)
 (*Check Rows*)
 
 
